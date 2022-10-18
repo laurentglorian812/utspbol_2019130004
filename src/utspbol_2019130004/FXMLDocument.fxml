@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="438.0" prefWidth="760.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="utspbol_2019130004.FXMLDocumentController">
+    <children>
+      <MenuBar prefHeight="25.0" prefWidth="760.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Input">
+            <items>
+              <MenuItem fx:id="inputrute" mnemonicParsing="false" onAction="#inputruteklik" text="Rute" />
+                  <MenuItem fx:id="inputbandara" mnemonicParsing="false" onAction="#inputbandaraklik" text="Bandara" />
+                  <MenuItem fx:id="inputjadwal" mnemonicParsing="false" onAction="#inputjadwalklik" text="Jadwal" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Data">
+               <items>
+                  <MenuItem fx:id="displayrute" mnemonicParsing="false" onAction="#displayruteklik" text="Rute" />
+                  <MenuItem fx:id="displaybandara" mnemonicParsing="false" onAction="#displaybandaraklik" text="Bandara" />
+                  <MenuItem fx:id="displayjadwal" mnemonicParsing="false" onAction="#displayjadwalklik" text="Jadwal" />
+               </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+      <ImageView fitHeight="510.0" fitWidth="760.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/D:/Documents/STMIK%20LIKMI%20LOLEN/Sem%207/PBOL/UTSPBOL_2019130004/src/background.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>

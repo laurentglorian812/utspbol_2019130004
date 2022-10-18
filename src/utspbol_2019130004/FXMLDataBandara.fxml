@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="438.0" prefWidth="760.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/18" fx:controller="utspbol_2019130004.FXMLDataBandaraController">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" text="Data Bandara">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="524.0" layoutY="349.0" text="Cari Data :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="searchbandara" layoutX="598.0" layoutY="346.0" onKeyReleased="#cariData" />
+      <TableView fx:id="tbvbandara" layoutX="14.0" layoutY="44.0" prefHeight="292.0" prefWidth="733.0">
+         <columns>
+            <TableColumn prefWidth="75.0" text="C1" />
+            <TableColumn prefWidth="75.0" text="C2" />
+         </columns>
+      </TableView>
+      <Button fx:id="btnawal" layoutX="14.0" layoutY="386.0" mnemonicParsing="false" onAction="#awalklik" prefHeight="30.0" prefWidth="36.0">
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/D:/Documents/STMIK%20LIKMI%20LOLEN/Sem%207/PBOL/UTSPBOL_2019130004/src/btn%20first.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btnsebelum" layoutX="70.0" layoutY="386.0" mnemonicParsing="false" onAction="#sebelumklik" prefHeight="30.0" prefWidth="0.0">
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/D:/Documents/STMIK%20LIKMI%20LOLEN/Sem%207/PBOL/UTSPBOL_2019130004/src/btn%20prev.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btnsesudah" layoutX="126.0" layoutY="386.0" mnemonicParsing="false" onAction="#sesudahklik" prefHeight="30.0" prefWidth="0.0">
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/D:/Documents/STMIK%20LIKMI%20LOLEN/Sem%207/PBOL/UTSPBOL_2019130004/src/btn%20next.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btnakhir" layoutX="182.0" layoutY="386.0" mnemonicParsing="false" onAction="#akhirklik" prefHeight="30.0" prefWidth="0.0">
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/D:/Documents/STMIK%20LIKMI%20LOLEN/Sem%207/PBOL/UTSPBOL_2019130004/src/btn%20last.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btntambah" layoutX="590.0" layoutY="386.0" mnemonicParsing="false" onAction="#tambahklik" prefHeight="30.0" prefWidth="0.0">
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/D:/Documents/STMIK%20LIKMI%20LOLEN/Sem%207/PBOL/UTSPBOL_2019130004/src/btn%20tambah.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btnhapus" layoutX="701.0" layoutY="386.0" mnemonicParsing="false" onAction="#hapusklik" prefHeight="30.0" prefWidth="0.0">
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/D:/Documents/STMIK%20LIKMI%20LOLEN/Sem%207/PBOL/UTSPBOL_2019130004/src/btn%20hapus.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btnubah" layoutX="646.0" layoutY="386.0" mnemonicParsing="false" onAction="#ubahklik" prefHeight="30.0" prefWidth="0.0">
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/D:/Documents/STMIK%20LIKMI%20LOLEN/Sem%207/PBOL/UTSPBOL_2019130004/src/btn%20edit.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

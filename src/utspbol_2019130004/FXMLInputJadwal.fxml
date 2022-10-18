@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="265.0" prefWidth="345.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="utspbol_2019130004.FXMLInputJadwalController">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" text="Tambah / Edit Data Jadwal">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="59.0" text="No Jadwal">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="99.0" text="Hari">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="140.0" text="Keberangkatan">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtno" layoutX="133.0" layoutY="54.0" prefHeight="30.0" prefWidth="198.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txthari" layoutX="133.0" layoutY="94.0" prefHeight="30.0" prefWidth="198.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtberangkat" layoutX="133.0" layoutY="134.0" prefHeight="30.0" prefWidth="198.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Button fx:id="btnsimpan" layoutX="229.0" layoutY="214.0" mnemonicParsing="false" onAction="#simpanklik" prefHeight="30.0" prefWidth="0.0">
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/D:/Documents/STMIK%20LIKMI%20LOLEN/Sem%207/PBOL/UTSPBOL_2019130004/src/btn%20simpan.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btnbatal" layoutX="285.0" layoutY="214.0" mnemonicParsing="false" onAction="#batalklik" prefHeight="30.0" prefWidth="0.0">
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/D:/Documents/STMIK%20LIKMI%20LOLEN/Sem%207/PBOL/UTSPBOL_2019130004/src/btn%20batal.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>
